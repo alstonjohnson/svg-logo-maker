@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const fs = requre("fs");
+const fs = require("fs");
 const { Triangle, Square, Circle } = require("./lib/shapes");
 
 function writeToFile(fileName, answers) {
