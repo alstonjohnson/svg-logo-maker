@@ -30,3 +30,7 @@ function writeToFile(fileName, answers) {
         err ? console.log(err) : console.log("Created logo.svg");
     });
 }
+
+function promptUser() {
+    
+}
