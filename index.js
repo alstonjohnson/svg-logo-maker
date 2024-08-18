@@ -32,5 +32,8 @@ function writeToFile(fileName, answers) {
 }
 
 function promptUser() {
-    
+    inquirer
+        .prompt([
+            
+        ])
 }
