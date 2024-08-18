@@ -4,7 +4,7 @@ const { Triangle, Square, Circle } = require("./lib/shapes");
 
 function writeFile(fileName, svgString) {
     fs.writeFile(fileName, svgString, (err) => {
-        err ? console.log(err) : console.log("Created logo.svg");
+        err ? console.log(err) : console.log("Generated logo.svg");
     });
 }
 
