@@ -25,14 +25,13 @@ function writeToFile(fileName, answers) {
     svgString += "</g>";
     svgString += "</svg>";
 
-    fs.writeToFile(fileName, svgString, (err) => {
+    fs.writeFile(fileName, svgString, (err) => {
         err ? console.log(err) : console.log("Created logo.svg");
     });
 }
 
 function promptUser() {
-    inquirer
-        .prompt([
+    inquirer.prompt([
             {
                 type: "input",
                 message:
@@ -66,7 +65,7 @@ function promptUser() {
             } else {
                 writeToFile("logo.svg", answers);
             }
-        })
+        });
 }
 
 promptUser();
