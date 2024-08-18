@@ -34,6 +34,12 @@ function writeToFile(fileName, answers) {
 function promptUser() {
     inquirer
         .prompt([
-            
+            {
+                type: "input",
+                message:
+                  "Please enter the three characters you want your logo to present",
+                name: "text",
+              },
+
         ])
 }
