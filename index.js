@@ -59,4 +59,15 @@ function promptUser() {
                 name: "shapeColor",
               },  
         ])
+
+        .then((answers) => {
+            if (answers.text.length > 3) {
+                console.log("Please enter no more than three characters");
+                promptUser();
+            } else {
+                writeToFile("logo.svg", answers);
+            }
+        })
 }
+
+promptUser();
